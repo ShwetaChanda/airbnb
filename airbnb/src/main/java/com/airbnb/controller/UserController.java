@@ -39,6 +39,7 @@ public class UserController {
     }
     @GetMapping("/profile")
     public PropertyUser getCurrentUserDetails(@AuthenticationPrincipal PropertyUser user){
+
         return user;
     }
 
